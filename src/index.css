@@ -29,21 +29,28 @@ code {
   padding: 1vh;
   border-bottom: 0.1em solid black;
   margin: 1%;
+  background-color: #e6bbad;
 }
 
 .header-item {
+  display: flex;
+  flex-direction: column;
   width: 20%;
-  border: 1px solid black;
-  transition: 0.5s;
+  transition: 0.2s all ease-in-out;
   overflow: hidden
+}
+
+.header-item > p {
+  font-size: 20px;
 }
 
 .header-item:hover {
   background-color: #add8e6;
+  transition: 0.2s all ease-in-out;
   transform: scale(1.1);
+  box-shadow: #d8e6ad 5px 5px;
 }
 
-.header-item:hover a{
-  font-size: 20px;
-  transform: scale(1.1)
+.header-item:hover grow{
+  transform: scale(2)
 }

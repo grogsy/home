@@ -6,13 +6,13 @@ export default class Header extends React.Component {
       <div className="header">
         {/** Header Item Components Here */}
         <div className="header-item">
-          <a href="#">Projects</a>
+          <p className="grow">Projects</p>
         </div>
         <div className="header-item">
-          <a href="#">Contact</a>
+          <p className="grow">Contact</p>
         </div>
         <div className="header-item">
-          <a href="#">Resume</a>
+          <p className="grow">Resume</p>
         </div>
       </div>
     );
