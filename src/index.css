@@ -48,7 +48,14 @@ code {
   background-color: #add8e6;
   transition: 0.2s all ease-in-out;
   transform: scale(1.1);
+  /* https://css-tricks.com/almanac/properties/b/box-shadow/ */
+  box-shadow: 0 10px 6px -6px #777;
+}
+
+.shadow:hover {
   box-shadow: #d8e6ad 5px 5px;
+  transition: 0.2s all ease-in-out;
+  transition-delay: 0.2s;
 }
 
 .header-item:hover grow{
