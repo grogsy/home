@@ -7,6 +7,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: #d8e6ad;
+
+  /* https://cssgradient.io/ */
+  /* background: rgb(216,230,173);
+  background: linear-gradient(121deg, rgba(216,230,173,1) 0%, rgba(216,230,173,1) 39%, rgba(8,195,121,1) 100%); 
+   */
 }
 
 code {
@@ -25,19 +32,24 @@ code {
   justify-content: space-around;
   align-content: center;
   /* Need to set viewport height calc to adjust header height size */
-  height: 9vh;
+  height: 13vh;
   padding: 1vh;
   border-bottom: 0.1em solid black;
   margin: 1%;
   background-color: #e6bbad;
+  border-radius: 5px;
 }
 
 .header-item {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 20%;
   transition: 0.2s all ease-in-out;
-  overflow: hidden
+  overflow: hidden;
+  margin-bottom: 15px;
+  border-radius: 10px;
 }
 
 .header-item > p {
@@ -58,6 +70,24 @@ code {
   transition-delay: 0.2s;
 }
 
-.header-item:hover grow{
+.header-item:hover grow {
   transform: scale(2)
 }
+
+.header-item:hover > icon {
+  transform: scale(2)
+}
+
+.icon:hover {
+  size: 3x;
+}
+
+
+.icon {
+  margin-bottom: 20px;
+}
+
+/* .icon:hover {
+  transition: 0.2s ease-in-out;
+  transform: scale(2);
+} */
