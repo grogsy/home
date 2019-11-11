@@ -50,10 +50,17 @@ code {
   overflow: hidden;
   margin-bottom: 15px;
   border-radius: 10px;
+  padding-bottom: 30px;
 }
 
 .header-item > p {
   font-size: 20px;
+  margin-top: 20px;
+  opacity: 0;
+}
+
+.header-text {
+  padding-top: 30px;
 }
 
 .header-item:hover {
@@ -64,18 +71,23 @@ code {
   box-shadow: 0 10px 6px -6px #777;
 }
 
-.shadow:hover {
-  box-shadow: #d8e6ad 5px 5px;
-  transition: 0.2s all ease-in-out;
-  transition-delay: 0.2s;
+.header-item:hover > p {
+  opacity: 1;
+  transition: 0.5s;
+  /* text-shadow: 1px 1px 2px #677;  */
+
 }
 
-.header-item:hover grow {
+.header-item:hover > fa {
+  transform: scale(1.2);
+}
+
+.header-item:hover > grow {
   transform: scale(2)
 }
 
 .header-item:hover > icon {
-  transform: scale(2)
+  transform: scale(2.5)
 }
 
 .icon:hover {
@@ -84,7 +96,7 @@ code {
 
 
 .icon {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 /* .icon:hover {

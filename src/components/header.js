@@ -12,11 +12,11 @@ export default class Header extends React.Component {
       <div className="header">
         {/** Header Item Components Here */}
         <div className="header-item">
-          <p className="grow">Projects</p>
+          <p className="header-text">Projects</p>
           <FontAwesomeIcon icon={faTasks} className="grow icon" size="3x" />
         </div>
         <div className="header-item">
-          <p className="grow">Contact</p>
+          <p className="header-text">Contact</p>
           <FontAwesomeIcon
             icon={faAddressCard}
             className="grow icon"
@@ -24,7 +24,7 @@ export default class Header extends React.Component {
           />
         </div>
         <div className="header-item">
-          <p className="grow">Resume</p>
+          <p className="header-text">Resume</p>
           <FontAwesomeIcon icon={faCopy} className="grow icon" size="3x" />
         </div>
       </div>
