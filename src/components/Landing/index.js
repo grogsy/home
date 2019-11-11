@@ -1,11 +1,13 @@
 import React from "react";
+import LeftBox from "./leftbox";
+import RightBox from "./rightbox";
 
 export default class Landing extends React.Component {
   render() {
     return (
       <div className="main">
-        <p>Hi I'm Brian!</p>
-        <p>Welcome to my Website</p>
+        <LeftBox />
+        <RightBox />
       </div>
     );
   }

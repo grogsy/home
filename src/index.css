@@ -59,6 +59,27 @@ code {
   opacity: 0;
 }
 
+.main {
+  padding-left: 40px;
+  padding-right: 40px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left-box, .right-box {
+  border: 1px solid black;
+}
+
+.left-box {
+  width: 35%;
+}
+
+.right-box {
+  width: 60%;
+}
+
 .header-text {
   padding-top: 30px;
 }

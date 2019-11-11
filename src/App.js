@@ -3,7 +3,7 @@ import logo from "./logo.svg";
 // import "./App.css";
 
 import Header from "./components/header";
-import Landing from "./components/landing";
+import Landing from "./components/Landing";
 
 function App() {
   return (
