@@ -37,10 +37,10 @@ class TopicContainer extends React.Component {
           />
           <p>{this.state.headerText}</p>
         </div>
-        <div className="gen-list">
+        <div className={this.state.closed ? "gen-list" : "gen-list fade-in"}>
           <ul>
             {this.state.listItems.map(item => {
-              return <li>{item}</li>;
+              return <li className="gen-list-item">{item}</li>;
             })}
           </ul>
         </div>

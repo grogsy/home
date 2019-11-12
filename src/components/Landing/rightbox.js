@@ -1,5 +1,6 @@
 import React from "react";
 import TopicContainer from "./TopicContainer";
+import data from "./data";
 
 const RightBox = props => {
   return (
@@ -7,12 +8,17 @@ const RightBox = props => {
       <TopicContainer
         className="topic-container"
         headerText="Hobbies"
-        listItems={["Programming", "Food"]}
+        listItems={data.hobbies}
       />
       <TopicContainer
         className="topic-container"
         headerText="Favorite Foods"
-        listItems={["Curry", "Everything", "Taco Supreme"]}
+        listItems={data.favoriteFoods}
+      />
+      <TopicContainer
+        className="topic-container"
+        headerText="Dummy Data"
+        listItems={["foo", "bar", "baz"]}
       />
     </div>
   );

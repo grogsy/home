@@ -102,26 +102,9 @@ code {
 
 }
 
-.header-item:hover > fa {
-  transform: scale(1.2);
-}
-
-.header-item:hover > grow {
-  transform: scale(2);
-}
-
-.header-item:hover > icon {
-  transform: scale(2.5);
-}
-
 .icon {
   margin-bottom: 30px;
 }
-
-/* .icon:hover {
-  transition: 0.2s ease-in-out;
-  transform: scale(2);
-} */
 
 .gen-header {
   /* border: 1px solid black; */
@@ -129,12 +112,6 @@ code {
   flex-direction: row;
 }
 
-.click-me {
-  border: 1px solid black;
-  margin-top: 10px;
-  transition: 0.5s all ease-in-out;
-  width: 5%;
-}
 
 .react-link {
   text-decoration: none;
@@ -146,8 +123,14 @@ code {
 
 .topic-container {
   max-height: 300px;
+  transition: 0.3s ease-in-out;
 }
 
+
+.topic-container:hover {
+  background-color: #add8e6;
+  cursor: pointer;
+}
 
 
 .closed {
@@ -159,4 +142,26 @@ code {
 .topic-container-icon {
   margin-top: 15px;
   margin-right: 10px;
+  margin-left: 5px;
+}
+
+.gen-list:hover {
+  background-color: #add8e6;
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.5s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
