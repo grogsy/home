@@ -53,6 +53,14 @@ code {
   padding-bottom: 30px;
 }
 
+.header-item:hover {
+  background-color: #add8e6;
+  transition: 0.2s all ease-in-out;
+  transform: scale(1.1);
+  /* https://css-tricks.com/almanac/properties/b/box-shadow/ */
+  box-shadow: 0 10px 6px -6px #777;
+}
+
 .header-item > p {
   font-size: 20px;
   margin-top: 20px;
@@ -77,6 +85,8 @@ code {
 }
 
 .right-box {
+  display: flex;
+  flex-direction: column;
   width: 60%;
 }
 
@@ -84,13 +94,6 @@ code {
   padding-top: 30px;
 }
 
-.header-item:hover {
-  background-color: #add8e6;
-  transition: 0.2s all ease-in-out;
-  transform: scale(1.1);
-  /* https://css-tricks.com/almanac/properties/b/box-shadow/ */
-  box-shadow: 0 10px 6px -6px #777;
-}
 
 .header-item:hover > p {
   opacity: 1;
@@ -104,17 +107,12 @@ code {
 }
 
 .header-item:hover > grow {
-  transform: scale(2)
+  transform: scale(2);
 }
 
 .header-item:hover > icon {
-  transform: scale(2.5)
+  transform: scale(2.5);
 }
-
-.icon:hover {
-  size: 3x;
-}
-
 
 .icon {
   margin-bottom: 30px;
@@ -124,3 +122,41 @@ code {
   transition: 0.2s ease-in-out;
   transform: scale(2);
 } */
+
+.gen-header {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: row;
+}
+
+.click-me {
+  border: 1px solid black;
+  margin-top: 10px;
+  transition: 0.5s all ease-in-out;
+  width: 5%;
+}
+
+.react-link {
+  text-decoration: none;
+}
+
+.react-link:visited {
+  text-decoration: none;
+}
+
+.topic-container {
+  max-height: 300px;
+}
+
+
+
+.closed {
+  /*??*/
+  max-height: 60px;
+  overflow: hidden;
+}
+
+.topic-container-icon {
+  margin-top: 15px;
+  margin-right: 10px;
+}
