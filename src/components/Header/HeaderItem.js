@@ -6,8 +6,10 @@ const HeaderItem = ({ headerName, link, icon }) => {
   return (
     <div className="header-item">
       <p className="header-text">{headerName}</p>
-      <Link to={`/${link}`} className="react-link">
-        <FontAwesomeIcon icon={icon} className="header-icon" size="3x" />
+      <Link to={`/${link}`} className="react-link clickable-space">
+        <div>
+          <FontAwesomeIcon icon={icon} className="header-icon" size="3x" />
+        </div>
       </Link>
     </div>
   );

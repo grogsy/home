@@ -1,6 +1,6 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCaretRight, faCaretDown } from "@fortawesome/free-solid-svg-icons";
+
+import TopicHeader from "./TopicHeader";
 
 class TopicContainer extends React.Component {
   constructor(props) {
@@ -28,18 +28,12 @@ class TopicContainer extends React.Component {
             : this.state.className
         }
       >
-        <div className="gen-header" onClick={this.toggleClosed}>
-          <FontAwesomeIcon
-            icon={this.state.closed ? faCaretRight : faCaretDown}
-            className={
-              this.state.closed
-                ? "topic-container-icon"
-                : "topic-container-icon fade-in"
-            }
-            size="lg"
-          />
-          <p>{this.state.headerText}</p>
-        </div>
+        <TopicHeader
+          isClosed={this.state.closed}
+          headerText={this.state.headerText}
+          toggleClosed={this.toggleClosed}
+        />
+
         <div className={this.state.closed ? "gen-list" : "gen-list fade-in"}>
           <ul>
             {this.state.listItems.map(item => {

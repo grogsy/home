@@ -70,7 +70,7 @@ code {
 .main {
   padding-left: 40px;
   padding-right: 40px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -78,6 +78,8 @@ code {
 
 .left-box, .right-box {
   border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 .left-box {
@@ -173,10 +175,13 @@ code {
   border-radius: 20px;
   border: 1px solid black;
   transition: 0.5s ease;
-  margin-left: 15%;
+}
+
+#me-container {
+  display: flex;
+  justify-content: center;
 }
 
 .me:hover {
-  transform: scale(1.5)
+  transform: scale(1.5);
 }
-
