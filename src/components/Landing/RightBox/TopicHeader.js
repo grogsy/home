@@ -4,9 +4,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const TopicHeader = ({ isClosed, headerText, toggleClosed }) => {
   return (
-    <div className="gen-header" onClick={toggleClosed}>
+    <div
+      className={isClosed ? "gen-header" : "gen-header gen-header-opened"}
+      onClick={toggleClosed}
+    >
       <FontAwesomeIcon
-        className="topic-container-icon"
+        className={
+          isClosed ? "topic-container-icon" : "topic-container-icon fade-in"
+        }
         icon={isClosed ? faCaretRight : faCaretDown}
         size="lg"
       />
