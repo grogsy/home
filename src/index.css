@@ -110,6 +110,7 @@ code {
   /* border: 1px solid black; */
   display: flex;
   flex-direction: row;
+  cursor: pointer;
 }
 
 
@@ -129,9 +130,7 @@ code {
 
 .topic-container:hover {
   background-color: #add8e6;
-  cursor: pointer;
 }
-
 
 .closed {
   /*??*/
@@ -165,3 +164,17 @@ code {
 		opacity: 1;
 	}
 }
+
+.me {
+  width: 70%;
+  height: 250px;
+  border-radius: 20px;
+  border: 1px solid black;
+  transition: 0.5s ease;
+  margin-left: 15%;
+}
+
+.me:hover {
+  transform: scale(1.5)
+}
+

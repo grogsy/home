@@ -27,12 +27,15 @@ class TopicContainer extends React.Component {
             ? this.state.className + " closed"
             : this.state.className
         }
-        onClick={this.toggleClosed}
       >
-        <div className="gen-header">
+        <div className="gen-header" onClick={this.toggleClosed}>
           <FontAwesomeIcon
             icon={this.state.closed ? faCaretRight : faCaretDown}
-            className="topic-container-icon"
+            className={
+              this.state.closed
+                ? "topic-container-icon"
+                : "topic-container-icon fade-in"
+            }
             size="lg"
           />
           <p>{this.state.headerText}</p>
