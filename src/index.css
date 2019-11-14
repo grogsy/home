@@ -102,7 +102,7 @@ code {
 
 }
 
-.icon {
+.header-icon {
   margin-bottom: 30px;
 }
 
@@ -116,10 +116,12 @@ code {
 
 .react-link {
   text-decoration: none;
+  color: #000;
 }
 
 .react-link:visited {
   text-decoration: none;
+  color: #000
 }
 
 .topic-container {
