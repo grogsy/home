@@ -5,7 +5,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const TopicHeader = ({ isClosed, headerText, toggleClosed }) => {
   return (
     <div
-      className={isClosed ? "gen-header" : "gen-header gen-header-opened"}
+      className={
+        isClosed
+          ? "card-header gen-header"
+          : "card-header gen-header gen-header-opened"
+      }
       onClick={toggleClosed}
     >
       <FontAwesomeIcon
@@ -15,7 +19,10 @@ const TopicHeader = ({ isClosed, headerText, toggleClosed }) => {
         icon={isClosed ? faCaretRight : faCaretDown}
         size="lg"
       />
-      <p>{headerText}</p>
+      {/* <p>{headerText}</p> */}
+      <h5>
+        <span className="badge">{headerText}</span>
+      </h5>
     </div>
   );
 };

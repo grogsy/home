@@ -34,10 +34,14 @@ class TopicContainer extends React.Component {
           toggleClosed={this.toggleClosed}
         />
 
-        <div className={this.state.closed ? "gen-list" : "gen-list fade-in"}>
-          <ul>
+        <div
+          className={
+            this.state.closed ? "gen-list card" : "gen-list fade-in card"
+          }
+        >
+          <ul className="list-group list-group-flush">
             {this.state.listItems.map(item => {
-              return <li className="gen-list-item">{item}</li>;
+              return <li className="gen-list-item list-group-item">{item}</li>;
             })}
           </ul>
         </div>

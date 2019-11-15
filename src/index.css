@@ -57,10 +57,15 @@ code {
   box-shadow: 0 10px 6px -6px #777;
 }
 
-.header-item > p {
+.header-item > .header-text-container > h5 {
   font-size: 20px;
   margin-top: 20px;
   opacity: 0;
+}
+
+.header-item:hover > .header-text-container > h5 {
+  opacity: 1;
+  transition: 0.5s;
 }
 
 .main {
@@ -88,33 +93,23 @@ code {
   width: 60%;
 }
 
-.header-text {
-  padding-top: 30px;
-}
-
-
-.header-item:hover > p {
-  opacity: 1;
-  transition: 0.5s;
-  /* text-shadow: 1px 1px 2px #677;  */
-
-}
-
-.header-icon {
-  margin-bottom: 30px;
+.header-text-container {
+  position: relative;
+  top: 4px;
 }
 
 .gen-header {
-  /* border: 1px solid black; */
   display: flex;
   flex-direction: row;
+  align-content: center;
   cursor: pointer;
+  max-width: 200px;
+  transition: 0.4s all ease-in-out;
 }
 
-.gen-header-opened{
-  /* border-bottom: 1px solid black; */
+.gen-header:hover {
+  background-color: #777
 }
-
 
 .react-link {
   text-decoration: none;
@@ -128,28 +123,26 @@ code {
 
 .topic-container {
   max-height: 300px;
+  width: 300px;
   transition: 0.3s ease-in-out;
-}
-
-
-.topic-container:hover {
-  background-color: #add8e6;
+  margin: 5px;
 }
 
 .closed {
   /*??*/
-  max-height: 45px;
+  max-height: 55px;
   overflow: hidden;
 }
 
 .topic-container-icon {
   margin-right: 10px;
   margin-left: 5px;
-  margin-top: 2px;
+  margin-top: 4px;
 }
 
-.gen-list:hover {
+.gen-list-item {
   background-color: #add8e6;
+  /* width: 200px; */
 }
 
 .fade-in {
@@ -169,23 +162,75 @@ code {
 	}
 }
 
-.me {
-  width: 70%;
-  height: 250px;
-  border-radius: 20px;
-  border: 1px solid black;
-  transition: 0.5s ease;
-}
-
 #me-container {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
-.me:hover {
-  transform: scale(1.5);
+.card-icon {
+  position: relative;
+  top: 10px;
+  left: 20px;
+}
+
+.project-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-image {
+  cursor: zoom-in;
+  overflow: hidden;
+  border-radius: 19px;
+  border: 1px solid black;
+}
+
+.modal-image-focused {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 1);
+}
+
+.modal-image-main {
+  position: fixed;
+  background: black;
+  left: 50%;
+  height: auto;
+  top: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.zoom-out {
+  cursor: zoom-out;
+}
+
+.modal-image-show {
+  display: block;
+}
+
+.modal-image-hide {
+  display: none;
 }
 
 .example-custom-css {
   background-color: #777;
+}
+
+/*modifying bootstrap defaults*/
+
+.modal-body, .modal-footer, .modal-header {
+  background-color: #666;
+}
+
+.modal-content {
+  border-radius: 20px;
+}
+
+.card {
+  border: 1px solid black;
 }

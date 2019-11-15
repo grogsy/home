@@ -12,7 +12,7 @@ const Header = ({ className }) => {
     <div className={className}>
       <HeaderItem headerName="Projects" icon={faTasks} link="projects" />
       <HeaderItem headerName="Contact" icon={faAddressCard} link="contact" />
-      <HeaderItem headerName="Resumse" icon={faCopy} link="resume" />
+      <HeaderItem headerName="Resume" icon={faCopy} link="resume" />
     </div>
   );
 };
