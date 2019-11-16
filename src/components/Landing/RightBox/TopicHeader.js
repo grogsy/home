@@ -19,7 +19,6 @@ const TopicHeader = ({ isClosed, headerText, toggleClosed }) => {
         icon={isClosed ? faCaretRight : faCaretDown}
         size="lg"
       />
-      {/* <p>{headerText}</p> */}
       <h5>
         <span className="badge">{headerText}</span>
       </h5>
