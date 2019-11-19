@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 
-const ProjectCard = props => {
+const ProjectCard = ({ headerText, description, deployLink, githubLink }) => {
   return (
     <div className="card" style={{ width: "30rem" }}>
       <img
@@ -12,13 +12,17 @@ const ProjectCard = props => {
         alt="ffff"
       />
       <div className="card-body example-custom-css">
-        <h5 className="card-title">Card title</h5>
+        <h5 className="card-title">
+          {/* {headerText} */}
+          Card title
+        </h5>
         <p className="card-text">
+          {/* {description} */}
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </p>
         <Link to="#" className="btn btn-primary">
-          Go somewhere
+          View In Heroku
         </Link>
         <Link className="react-link" to="#">
           <FontAwesomeIcon className="card-icon" icon={faGithub} size="3x" />

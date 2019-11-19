@@ -7,6 +7,11 @@ const RightBox = props => {
     <div className="right-box">
       <TopicContainer
         className="topic-container"
+        headerText="Interesting Facts"
+        listItems={data.interestingFacts}
+      />
+      <TopicContainer
+        className="topic-container"
         headerText="Hobbies"
         listItems={data.hobbies}
       />

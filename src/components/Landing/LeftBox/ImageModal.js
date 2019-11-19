@@ -6,7 +6,6 @@ import React from "react";
  */
 
 const Modal = ({ handleClose, show, imgSrc }) => {
-  console.log(show);
   const showHideClassName = show
     ? "modal-image-focused modal-image-show zoom-out"
     : "modal-image-focused modal-image-hide";

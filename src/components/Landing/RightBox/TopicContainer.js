@@ -7,8 +7,6 @@ class TopicContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      listItems: props.listItems,
-      headerText: props.headerText,
       closed: true
     };
 
@@ -19,19 +17,21 @@ class TopicContainer extends React.Component {
     this.setState({ closed: !this.state.closed });
   }
 
-  isClosed = state => {
-    return state.closed ? `${this.props.className} closed` : state.className;
+  isClosed = () => {
+    return this.state.closed
+      ? `${this.props.className} closed`
+      : this.props.className;
   };
 
   render() {
     return (
-      <div className={this.isClosed(this.state)}>
+      <div className={this.isClosed()}>
         <TopicHeader
           isClosed={this.state.closed}
-          headerText={this.state.headerText}
+          headerText={this.props.headerText}
           toggleClosed={this.toggleClosed}
         />
-        <TopicList isClosed={this.state.closed} list={this.state.listItems} />
+        <TopicList isClosed={this.state.closed} list={this.props.listItems} />
       </div>
     );
   }
