@@ -112,10 +112,6 @@ code {
   transition: 0.4s all ease-in-out;
 }
 
-.gen-header:hover {
-  background-color: #777
-}
-
 .react-link {
   text-decoration: none;
   color: #000;
@@ -126,11 +122,29 @@ code {
   color: #000
 }
 
+.project-header {
+  display:flex;
+  flex-direction: row;
+  cursor: pointer;
+  max-width: 30rem;
+  transition: 0.4s all ease-in-out;
+}
+
+.gen-header:hover, .project-header:hover {
+  background-color: #777
+}
+
 .topic-container {
   max-height: 300px;
   width: 300px;
   transition: 0.3s ease-in-out;
   margin: 5px;
+}
+
+.project-container {
+  max-height: 500px;
+  width: 35rem;
+  transition: 0.3s ease-in-out;
 }
 
 .closed {
