@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectContainer from "./ProjectContainer";
-import data from "../Landing/RightBox/data";
+import data from "../data";
 
 const Projects = props => {
   return (

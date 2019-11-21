@@ -1,30 +1,17 @@
 import React from "react";
 import TopicContainer from "./TopicContainer";
-import data from "./data";
+import data from "../../data";
 
 const RightBox = props => {
   return (
     <div className="right-box">
-      <TopicContainer
-        className="topic-container"
-        headerText="Interesting Facts"
-        listItems={data.interestingFacts}
-      />
-      <TopicContainer
-        className="topic-container"
-        headerText="Hobbies"
-        listItems={data.hobbies}
-      />
-      <TopicContainer
-        className="topic-container"
-        headerText="Favorite Foods"
-        listItems={data.favoriteFoods}
-      />
-      <TopicContainer
-        className="topic-container"
-        headerText="Dummy Data"
-        listItems={["foo", "bar", "baz"]}
-      />
+      {data.lists.map(item => (
+        <TopicContainer
+          className="topic-container"
+          headerText={item.name}
+          listItems={item.content}
+        />
+      ))}
     </div>
   );
 };

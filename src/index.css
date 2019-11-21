@@ -108,7 +108,7 @@ code {
   flex-direction: row;
   align-content: center;
   cursor: pointer;
-  max-width: 200px;
+  max-width: 18rem;
   transition: 0.4s all ease-in-out;
 }
 
@@ -259,5 +259,5 @@ code {
 
 .card {
   border: 1px solid black;
-  width: 250px;
+  width: 18rem;
 }
