@@ -29,7 +29,6 @@ export default class ProjectContainer extends React.Component {
   };
 
   render() {
-    console.log("ProjectContainer props", this.props);
     return (
       <div className={this.isClosed()}>
         <div
