@@ -196,8 +196,10 @@ code {
 .project-main {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
+  margin-bottom: 50px;
 }
 
 .modal-image {
