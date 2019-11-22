@@ -28,8 +28,8 @@ export default class Landing extends React.Component {
           <p>Me messing with python: </p>
           <div id="me-container">
             <ImageModal
-              show={this.props.show}
-              handleClose={this.props.hideModal}
+              show={this.state.show}
+              handleClose={this.hideModal}
               imgSrc={me}
             />
             <img
@@ -38,7 +38,7 @@ export default class Landing extends React.Component {
               alt="me"
               width="500"
               height="300"
-              onClick={this.props.showModal}
+              onClick={this.showModal}
             />
           </div>
         </ContainerSmall>

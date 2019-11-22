@@ -53,6 +53,9 @@ export default class ProjectContainer extends React.Component {
           </h5>
         </div>
         <ProjectCard
+          show={this.state.showModal}
+          handleClose={this.hideModal}
+          showModal={this.showModal}
           isClosed={this.state.closed}
           headerText={this.props.headerText}
           description={this.props.description}
