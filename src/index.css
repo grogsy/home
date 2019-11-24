@@ -181,6 +181,25 @@ code {
 	}
 }
 
+/*possible slide in animation*/
+.slide-right {
+  position: relative;
+  left: 40px;
+  animation-name: slideIn;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 5s;
+}
+
+@keyframes slideIn {
+  0% {
+    left: 0px;
+  }
+  100% {
+    right: 40px;
+  }
+}
+
 #me-container {
   display: flex;
   justify-content: center;
