@@ -10,7 +10,11 @@ const data = {
     },
     {
       name: "Interesting Facts About Me",
-      content: ["I sleep in weird positions", "I love to drive(sometimes)"]
+      content: [
+        "I sleep in weird positions",
+        "I love to drive(sometimes)",
+        "Pretty bad with names"
+      ]
     }
   ],
   projects: [

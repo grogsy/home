@@ -29,9 +29,13 @@ const ProjectCard = ({
       />
       <div className="card-body example-custom-css">
         <p className="card-text">{description}</p>
-        <a target="_blank" href={deployLink} className="btn btn-primary">
-          View In Heroku
-        </a>
+        {deployLink ? (
+          <a target="_blank" href={deployLink} className="btn btn-primary">
+            View In Heroku
+          </a>
+        ) : (
+          <p>No Deploy Link :(</p>
+        )}
         <a target="_blank" href={githubLink}>
           <FontAwesomeIcon
             className="card-icon react-link"
@@ -42,6 +46,10 @@ const ProjectCard = ({
       </div>
     </div>
   );
+};
+
+ProjectCard.defaultProps = {
+  deployLink: null
 };
 
 export default ProjectCard;
