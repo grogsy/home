@@ -6,7 +6,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { ImageModal } from "./index";
 
-class ModalCarousel extends React.Component {
+class Carousel extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -20,21 +20,21 @@ class ModalCarousel extends React.Component {
   };
 
   prev = () => {
-    let active = this.state.active - 1;
-    if (active < 0) {
-      active = this.images.length - 1;
+    let idx = this.state.active - 1;
+    if (idx < 0) {
+      idx = this.images.length - 1;
     }
 
-    this.setActive(active);
+    this.setActive(idx);
   };
 
   next = () => {
-    let active = this.state.active + 1;
-    if (active >= this.images.length) {
-      active = 0;
+    let idx = this.state.active + 1;
+    if (idx >= this.images.length) {
+      idx = 0;
     }
 
-    this.setActive(active);
+    this.setActive(idx);
   };
 
   render() {
@@ -48,7 +48,7 @@ class ModalCarousel extends React.Component {
         <FontAwesomeIcon icon={faChevronLeft} size="lg" onClick={this.prev()} />
         <img
           className="card-img-top"
-          style={{ curser: "zoom-in" }}
+          style={{ cursor: "zoom-in" }}
           src={this.state.images[this.state.active]}
           alt="Something wrong"
           onClick={this.props.showModal}
@@ -63,4 +63,4 @@ class ModalCarousel extends React.Component {
   }
 }
 
-export default ModalCarousel;
+export default Carousel;
