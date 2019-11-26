@@ -10,11 +10,12 @@ const Carousel = ({ images, show, hideModal, showModal }) => {
   const [active, setActive] = useState(0);
 
   return (
-    <React.Fragment>
+    <div className="carousel">
       <ImageModal show={show} handleClose={hideModal} imgSrc={images[active]} />
       <FontAwesomeIcon
+        className="carousel-btn"
         icon={faChevronLeft}
-        size="lg"
+        size="3x"
         onClick={() => {
           let idx = active - 1;
           if (idx < 0) idx = images.length - 1;
@@ -29,15 +30,16 @@ const Carousel = ({ images, show, hideModal, showModal }) => {
         onClick={showModal}
       />
       <FontAwesomeIcon
+        className="carousel-btn"
         icon={faChevronRight}
-        size="lg"
+        size="3x"
         onClick={() => {
           let idx = active + 1;
           if (idx >= images.length) idx = 0;
           setActive(idx);
         }}
       />
-    </React.Fragment>
+    </div>
   ); //
 };
 

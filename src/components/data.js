@@ -20,7 +20,10 @@ const data = {
   projects: [
     {
       name: "inGoodCompany",
-      imgLink: "https://i.imgur.com/vKKbSvO.jpg",
+      images: [
+        "https://i.imgur.com/vKKbSvO.jpg",
+        "https://i.imgur.com/5qlEcEn.png"
+      ],
       description:
         "Social Media Website built with React & GraphQL (The heroku link may take a while to load if the service hasn't been started in a while)",
       deployLink: "https://in-good-company.herokuapp.com",
@@ -28,7 +31,10 @@ const data = {
     },
     {
       name: "Eccentric Elven Arts",
-      imgLink: "https://i.imgur.com/Kocq3Gz.jpg",
+      images: [
+        "https://i.imgur.com/Kocq3Gz.jpg",
+        "https://i.imgur.com/tTlGP4j.png"
+      ],
       description: "E-commerce Site built using NERD Stack",
       deployLink: "https://eccentric-elven-arts.herokuapp.com/",
       githubLink: "https://github.com/EccentricElves/GraceShopper"

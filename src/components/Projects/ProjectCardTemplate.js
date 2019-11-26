@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { ImageModal } from "../Layout";
+import { ImageModal, Carousel } from "../Layout";
 
 const checkIfOpened = closed => {
   return closed ? "card" : "card fade-in";
@@ -13,19 +13,18 @@ const ProjectCard = ({
   showModal,
   isClosed,
   imgLink,
+  images,
   description,
   deployLink,
   githubLink
 }) => {
   return (
     <div className={checkIfOpened(isClosed)} style={{ width: "35rem" }}>
-      <ImageModal show={show} handleClose={handleClose} imgSrc={imgLink} />
-      <img
-        className="card-img-top"
-        style={{ cursor: "zoom-in" }}
-        src={imgLink}
-        alt="ffff"
-        onClick={showModal}
+      <Carousel
+        images={images}
+        show={show}
+        hideModal={handleClose}
+        showModal={showModal}
       />
       <div className="card-body example-custom-css">
         <p className="card-text">{description}</p>

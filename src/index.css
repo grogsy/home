@@ -130,6 +130,18 @@ code {
   transition: 0.4s all ease-in-out;
 }
 
+.carousel {
+  display: flex;
+  flex-direction: row;
+  background-color: #777;
+}
+
+.carousel-btn {
+  position: relative;
+  top: 50%;
+  cursor: pointer;
+}
+
 .gen-header:hover, .project-header:hover {
   background-color: #777
 }

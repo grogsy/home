@@ -60,6 +60,7 @@ export default class ProjectContainer extends React.Component {
           headerText={this.props.headerText}
           description={this.props.description}
           imgLink={this.props.imgLink}
+          images={this.props.images}
           deployLink={this.props.deployLink}
           githubLink={this.props.githubLink}
         />

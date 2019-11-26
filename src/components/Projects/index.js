@@ -12,6 +12,7 @@ const Projects = props => {
           deployLink={project.deployLink}
           githubLink={project.githubLink}
           imgLink={project.imgLink}
+          images={project.images}
         />
       ))}
     </div>
