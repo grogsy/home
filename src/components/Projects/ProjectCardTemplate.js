@@ -12,7 +12,6 @@ const ProjectCard = ({
   handleClose,
   showModal,
   isClosed,
-  imgLink,
   images,
   description,
   deployLink,
