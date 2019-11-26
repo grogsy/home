@@ -1,70 +1,54 @@
-import React from "react";
+import React, { useState } from "react";
 import ProjectCard from "./ProjectCardTemplate";
 import { faCaretRight, faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default class ProjectContainer extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      closed: true,
-      showModal: false
-    };
-  }
+const ProjectContainer = ({
+  headerText,
+  description,
+  images,
+  deployLink,
+  githubLink
+}) => {
+  const [isClosed, toggleOpenClose] = useState(true);
+  const [showModal, toggleModal] = useState(false);
 
-  toggleClosed = () => {
-    this.setState({ closed: !this.state.closed });
-  };
-
-  showModal = () => {
-    this.setState({ showModal: true });
-  };
-
-  hideModal = () => {
-    this.setState({ showModal: false });
-  };
-
-  isClosed = () => {
-    return this.state.closed ? "project-container closed" : "project-container";
-  };
-
-  render() {
-    return (
-      <div className={this.isClosed()}>
-        <div
+  return (
+    <div
+      className={isClosed ? "project-container closed" : "project-container"}
+    >
+      <div
+        className="card-header project-header"
+        onClick={() => {
+          toggleOpenClose(!isClosed);
+        }}
+      >
+        <FontAwesomeIcon
           className={
-            this.state.closed
-              ? "card-header project-header"
-              : "card-header project-header"
+            isClosed ? "topic-container-icon" : "topic-container-icon fade-in"
           }
-          onClick={this.toggleClosed}
-        >
-          <FontAwesomeIcon
-            className={
-              this.state.closed
-                ? "topic-container-icon"
-                : "topic-container-icon fade-in"
-            }
-            icon={this.state.closed ? faCaretRight : faCaretDown}
-            size="lg"
-          />
-          <h5>
-            <span className="badge">{this.props.headerText}</span>
-          </h5>
-        </div>
-        <ProjectCard
-          show={this.state.showModal}
-          handleClose={this.hideModal}
-          showModal={this.showModal}
-          isClosed={this.state.closed}
-          headerText={this.props.headerText}
-          description={this.props.description}
-          imgLink={this.props.imgLink}
-          images={this.props.images}
-          deployLink={this.props.deployLink}
-          githubLink={this.props.githubLink}
+          icon={isClosed ? faCaretRight : faCaretDown}
+          size="lg"
         />
+        <h5>
+          <span className="badge">{headerText}</span>
+        </h5>
       </div>
-    );
-  }
-}
+      <ProjectCard
+        show={showModal}
+        handleClose={() => {
+          toggleModal(false);
+        }}
+        showModal={() => toggleModal(true)}
+        isClosed={isClosed}
+        headerText={headerText}
+        description={description}
+        images={images}
+        deployLink={deployLink}
+        githubLink={githubLink}
+      />
+    </div>
+  );
+};
+
+export default ProjectContainer;
