@@ -83,23 +83,17 @@ code {
   /* border: 1px solid black; */
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .left-box, .right-box {
-  border: 1px solid black;
-  border-radius: 5px;
   padding: 10px;
 }
 
-.left-box {
-  width: 35%;
-}
 
 .right-box {
   display: flex;
   flex-direction: column;
-  width: 60%;
 }
 
 .header-text-container {
@@ -145,6 +139,11 @@ code {
   position: relative;
   top: 1.5em;
   cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+.carousel-btn:hover {
+  color: #bbdddd;
 }
 
 .carousel-img {
@@ -281,9 +280,6 @@ code {
   display: none;
 }
 
-.example-custom-css {
-  background-color: #777;
-}
 
 /*
  *
