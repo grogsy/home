@@ -138,8 +138,13 @@ code {
 
 .carousel-btn {
   position: relative;
-  top: 50%;
+  top: 1.5em;
   cursor: pointer;
+}
+
+.carousel-img {
+  width: 400px;
+  height: 200px
 }
 
 .gen-header:hover, .project-header:hover {
