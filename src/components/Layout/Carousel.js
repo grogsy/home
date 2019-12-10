@@ -23,7 +23,7 @@ const Carousel = ({ images, show, hideModal, showModal }) => {
         }}
       />
       <img
-        className="card-img-top"
+        className="card-img-top carousel-img"
         style={{ cursor: "zoom-in" }}
         src={images[active]}
         alt="Something wrong"
