@@ -231,6 +231,11 @@ code {
   position: relative;
   top: 10px;
   left: 20px;
+  transition: 0.4s all ease-in-out;
+}
+
+.card-icon:hover {
+  color: #bbdddd;
 }
 
 .project-main {
