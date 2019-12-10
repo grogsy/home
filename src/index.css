@@ -8,8 +8,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: #d8e6ad;
+  background-color: #004466;
 
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  color: #bbdddd;
 }
 
 code {
@@ -35,7 +39,7 @@ code {
   padding: 1vh;
   border-bottom: 0.1em solid black;
   margin: 1%;
-  background-color: #e6bbad;
+  background-color: #556677;
   border-radius: 5px;
   width: 50%;
 }
@@ -54,11 +58,11 @@ code {
 }
 
 .header-item:hover {
-  background-color: #add8e6;
+  background-color: #226699;
   transition: 0.2s all ease-in-out;
   transform: scale(1.1);
   /* https://css-tricks.com/almanac/properties/b/box-shadow/ */
-  box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #101111;
 }
 
 .header-item > .header-text-container > h5 {
