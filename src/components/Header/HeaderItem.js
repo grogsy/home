@@ -11,7 +11,7 @@ const HeaderItem = ({ headerName, link, icon }) => {
           <span className="badge header-text">{headerName}</span>
         </h5>
       </div>
-      <Link to={`/${link}`} className="react-link">
+      <Link to={link ? `/${link}` : "/"} className="react-link">
         <div>
           <FontAwesomeIcon icon={icon} className="header-icon" size="3x" />
         </div>
