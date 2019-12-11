@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import CardHeader from "./Header";
 import Card from "./Card";
 import CardBody from "./CardBody";
+import ProjectDescription from "./ProjectDescription";
 import { Carousel } from "../../Layout";
 
 const ProjectContainer = ({
@@ -36,11 +37,13 @@ const ProjectContainer = ({
             toggleModal(true);
           }}
         />
-        <CardBody
-          description={description}
-          deployLink={deployLink}
-          githubLink={githubLink}
-        />
+        <CardBody>
+          <ProjectDescription
+            description={description}
+            deployLink={deployLink}
+            githubLink={githubLink}
+          />
+        </CardBody>
       </Card>
     </div>
   );
