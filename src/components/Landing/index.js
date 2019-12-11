@@ -16,19 +16,11 @@ const Landing = () => {
         <p>I'm using this as a playground to try out front-end things</p>
         <p>Me messing with python: </p>
         <div id="me-container">
-          <ImageModal
-            show={show}
-            handleClose={() => {
-              setShow(false);
-            }}
-            imgSrc={me}
-          />
           <img
-            className="modal-image"
+            className="me"
             src={me}
             alt="me"
-            width="500"
-            height="300"
+            width="400"
             onClick={() => setShow(true)}
           />
         </div>
