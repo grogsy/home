@@ -38,6 +38,13 @@ const data = {
       description: "E-commerce Site built using NERD Stack",
       deployLink: "https://eccentric-elven-arts.herokuapp.com/",
       githubLink: "https://github.com/EccentricElves/GraceShopper"
+    },
+    {
+      name: "pawpals",
+      description:
+        "Dog adoption mobile app based on Tinders matching mechanism. Built using React Native and Firebase",
+      images: ["https://i.imgur.com/I5rTyTy.png"],
+      githubLink: "https://github.com/grogsy/pawpals"
     }
   ]
 };
