@@ -137,7 +137,7 @@ code {
 
 .carousel-btn {
   position: relative;
-  top: 1.5em;
+  align-self: center;
   cursor: pointer;
   transition: 0.2s all ease-in-out;
 }
