@@ -147,8 +147,8 @@ code {
 }
 
 .carousel-img {
-  width: 400px;
-  height: 200px
+  display: flex;
+  overflow: hidden;
 }
 
 .gen-header:hover, .project-header:hover {
@@ -222,10 +222,16 @@ code {
 }
 
 #me-container {
-  display: flex;
-  justify-content: center;
   width: 100%;
 }
+
+.me {
+  width: 450px;
+  height: 240px;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
 
 .card-icon {
   position: relative;
@@ -268,7 +274,6 @@ code {
   position: fixed;
   background: black;
   left: 50%;
-  height: auto;
   top: 50%;
   transform: translate(-50%, -50%)
 }
@@ -303,4 +308,8 @@ code {
 .card {
   border: 1px solid black;
   width: 18rem;
+}
+
+.disabled {
+  cursor: no-drop;
 }
