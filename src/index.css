@@ -121,6 +121,7 @@ code {
 }
 
 .project-header {
+  background-color: #3e4358;
   display:flex;
   flex-direction: row;
   cursor: pointer;
@@ -298,7 +299,7 @@ code {
  */
 
 .modal-body, .modal-footer, .modal-header {
-  background-color: #666;
+  background-color: #2f323c;
 }
 
 .modal-content {
