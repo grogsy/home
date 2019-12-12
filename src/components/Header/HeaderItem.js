@@ -1,21 +1,20 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "../Layout/LinkParser";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const HeaderItem = ({ headerName, link, icon }) => {
   return (
     <div className="header-item">
-      <div className="header-text-container">
-        {/* <p className="header-text">{headerName}</p> */}
-        <h5>
-          <span className="badge header-text">{headerName}</span>
-        </h5>
-      </div>
-      <Link to={link ? `/${link}` : "/"} className="react-link">
+      <Link link={link}>
         <div>
-          <FontAwesomeIcon icon={icon} className="header-icon" size="3x" />
+          <FontAwesomeIcon icon={icon} className="header-icon" size="lg" />
         </div>
       </Link>
+      <div className="header-text-container">
+        <Link link={link} extraClasses="nav-link">
+          <span className="header-text">{headerName}</span>
+        </Link>
+      </div>
     </div>
   );
 };
