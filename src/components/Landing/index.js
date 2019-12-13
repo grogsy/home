@@ -3,8 +3,6 @@ import React from "react";
 import TopicList from "./TopicsList";
 import AboutMe from "./AboutMe";
 import { ContainerSmall } from "../Layout";
-import "./topic.css";
-import "./about.css";
 
 const Landing = () => {
   return (

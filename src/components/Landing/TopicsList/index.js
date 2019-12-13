@@ -1,6 +1,7 @@
 import React from "react";
 import TopicContainer from "./TopicContainer";
 import data from "../../data";
+import "./topic.css";
 
 const RightBox = props => {
   return (
