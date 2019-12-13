@@ -1,0 +1,23 @@
+/*Mobile devices*/
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  /*Desktops*/
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+    width: 80%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: initial;
+  }
+}
+
+.about, .topics {
+  padding: 10px;
+}
