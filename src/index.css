@@ -59,10 +59,6 @@ code {
   padding: 10px;
 }
 
-.topics {
-  display: flex;
-  flex-direction: column;
-}
 
 .react-link {
   text-decoration: none;
