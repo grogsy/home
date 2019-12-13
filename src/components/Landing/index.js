@@ -16,7 +16,7 @@ const Landing = () => {
         <p>I'm using this as a playground to try out front-end things</p>
         <p>Me messing with python: </p>
         <div id="me-container">
-          <img className="me" src={me} alt="me" width="400" />
+          <img className="me" src={me} alt="me" />
         </div>
       </ContainerSmall>
       <TopicList />
