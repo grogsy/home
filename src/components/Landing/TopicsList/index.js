@@ -4,7 +4,7 @@ import data from "../../data";
 
 const RightBox = props => {
   return (
-    <div className="topics">
+    <React.Fragment>
       {data.lists.map(item => (
         <TopicContainer
           className="topic-container"
@@ -12,7 +12,7 @@ const RightBox = props => {
           listItems={item.content}
         />
       ))}
-    </div>
+    </React.Fragment>
   );
 };
 
