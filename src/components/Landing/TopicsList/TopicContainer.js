@@ -3,6 +3,10 @@ import React from "react";
 import TopicHeader from "./TopicHeader";
 import TopicList from "./TopicList";
 
+/**
+ * TODO: Change to state hook
+ */
+
 class TopicContainer extends React.Component {
   constructor(props) {
     super(props);
