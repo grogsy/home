@@ -1,0 +1,42 @@
+.topic-header {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  padding-bottom: 3px;
+  cursor: pointer;
+  max-width: 18rem;
+  transition: 0.4s all ease-in-out;
+}
+
+.topic-header:hover {
+  background-color: #777
+}
+
+.topic-container {
+  max-height: 300px;
+  width: 300px;
+  transition: 0.3s ease-in-out;
+  margin: 5px;
+}
+
+.project-container {
+  max-height: 500px;
+  width: 35rem;
+  transition: 0.3s ease-in-out;
+}
+
+.topic-container-icon {
+  margin-right: 10px;
+  margin-left: 5px;
+  margin-top: 4px;
+}
+
+.topic-list-item {
+  background-color: #add8e6;
+  /* width: 200px; */
+}
+
+.closed {
+  max-height: 55px;
+  overflow: hidden;
+}

@@ -1,7 +1,7 @@
 import React from "react";
 
 const getCorrectClassName = closed => {
-  return closed ? "gen-list card" : "gen-list card fade-in";
+  return closed ? "topic-list card" : "topic-list card fade-in";
 };
 
 const TopicList = ({ list, isClosed }) => {
@@ -9,7 +9,7 @@ const TopicList = ({ list, isClosed }) => {
     <div className={getCorrectClassName(isClosed)}>
       <ul className="list-group list-group-flush">
         {list.map(item => {
-          return <li className="gen-list-item list-group-item">{item}</li>;
+          return <li className="topic-list-item list-group-item">{item}</li>;
         })}
       </ul>
     </div>

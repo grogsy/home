@@ -35,64 +35,10 @@ code {
   top: 100px;
 }
 
-.header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-content: center;
-  /* Need to set viewport height calc to adjust header height size */
-  height: 13vh;
-  padding: 1vh;
-  border-bottom: 0.1em solid black;
-  margin: 1%;
-  background-color: #556677;
-  border-radius: 5px;
-  width: 50%;
-}
-
-.header-item {
-  height: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: 0.2s all ease-in-out;
-  margin-left: 5px;
-  margin-right: 5px;
-  border-radius: 3px;
-  padding:10px;
-}
-
-.header-item:hover {
-  background-color: #226699;
-  transition: 0.2s all ease-in-out;
-  transform: scale(1.1);
-  /* https://css-tricks.com/almanac/properties/b/box-shadow/ */
-  box-shadow: 0 10px 6px -6px #101111;
-}
-
-
-.header-icon {
-  position: relative;
-  top: 4px;
-}
-
-.footer-item {
-  margin-left: 30px;
-  margin-right: 30px;
-  transition: 0.3s all ease-in-out;
-  text-decoration: none;
-}
-
-.footer-item:hover {
-  transform: scale(1.1);
-}
-
 .main {
   padding-left: 40px;
   padding-right: 40px;
   width: 80%;
-  /* border: 1px solid black; */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -102,24 +48,9 @@ code {
   padding: 10px;
 }
 
-
 .right-box {
   display: flex;
   flex-direction: column;
-}
-
-.header-text-container {
-  position: relative;
-  bottom:3px;
-}
-
-.gen-header {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  cursor: pointer;
-  max-width: 18rem;
-  transition: 0.4s all ease-in-out;
 }
 
 .react-link {
@@ -130,72 +61,6 @@ code {
 .react-link:visited {
   text-decoration: none;
   color: #000
-}
-
-.project-header {
-  background-color: #3e4358;
-  display:flex;
-  flex-direction: row;
-  cursor: pointer;
-  max-width: 30rem;
-  margin: 5px;
-  transition: 0.4s all ease-in-out;
-}
-
-.carousel {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  background-color: #777;
-}
-
-.carousel-btn {
-  align-self: center;
-  cursor: pointer;
-  transition: 0.2s all ease-in-out;
-}
-
-.carousel-btn:hover {
-  color: #bbdddd;
-}
-
-.carousel-img {
-  display: flex;
-  overflow: hidden;
-}
-
-.gen-header:hover, .project-header:hover {
-  background-color: #777
-}
-
-.topic-container {
-  max-height: 300px;
-  width: 300px;
-  transition: 0.3s ease-in-out;
-  margin: 5px;
-}
-
-.project-container {
-  max-height: 500px;
-  width: 35rem;
-  transition: 0.3s ease-in-out;
-}
-
-.closed {
-  /*??*/
-  max-height: 55px;
-  overflow: hidden;
-}
-
-.topic-container-icon {
-  margin-right: 10px;
-  margin-left: 5px;
-  margin-top: 4px;
-}
-
-.gen-list-item {
-  background-color: #add8e6;
-  /* width: 200px; */
 }
 
 .fade-in {
@@ -245,83 +110,13 @@ code {
   border: 1px solid black;
 }
 
-
-.card-icon {
-  position: relative;
-  top: 10px;
-  left: 20px;
-  transition: 0.4s all ease-in-out;
-}
-
-.card-icon:hover {
-  color: #bbdddd;
-}
-
-.project-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  position: relative;
-  bottom: 20px;
-}
-
-.modal-image {
-  cursor: zoom-in;
-  overflow: hidden;
-  border-radius: 19px;
-  border: 1px solid black;
-}
-
-.modal-image-focused {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1000;
-  background: rgba(0, 0, 0, 1);
-}
-
-.modal-image-main {
-  position: fixed;
-  background: black;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%)
-}
-
-.zoom-out {
-  cursor: zoom-out;
-}
-
-.modal-image-show {
-  display: block;
-}
-
-.modal-image-hide {
-  display: none;
-}
-
-
 /*
- *
- * modifying bootstrap defaults
- *
+ *modifying bootstrap defaults
  */
-
-.modal-body, .modal-footer, .modal-header {
-  background-color: #2f323c;
-}
-
-.modal-content {
-  border-radius: 20px;
-}
 
 .card {
   border: 1px solid black;
-  margin: 5px;
+  margin-top: 10px;
 }
 
 .disabled {

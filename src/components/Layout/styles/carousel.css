@@ -1,0 +1,21 @@
+.carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #777;
+}
+
+.carousel-btn {
+  align-self: center;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+.carousel-btn:hover {
+  color: #bbdddd;
+}
+
+.carousel-img {
+  display: flex;
+  overflow: hidden;
+}

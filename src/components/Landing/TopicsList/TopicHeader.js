@@ -7,8 +7,8 @@ const TopicHeader = ({ isClosed, headerText, toggleClosed }) => {
     <div
       className={
         isClosed
-          ? "card-header gen-header"
-          : "card-header gen-header gen-header-opened"
+          ? "card-header topic-header closed"
+          : "card-header topic-header"
       }
       onClick={toggleClosed}
     >

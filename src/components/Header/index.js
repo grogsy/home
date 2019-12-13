@@ -3,6 +3,7 @@ import { faCopy, faTasks, faHome } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import HeaderItem from "./HeaderItem";
+import "./styles.css";
 
 const Header = ({ className }) => {
   return (

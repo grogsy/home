@@ -1,9 +1,5 @@
-/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
-
-/**
- * Plans to use an image modal using bootstrap
- */
+import "./styles/image_modal.css";
 
 const Modal = ({ handleClose, show, imgSrc }) => {
   const showHideClassName = show
