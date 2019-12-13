@@ -3,9 +3,9 @@ import React from "react";
 const ctx = where => {
   switch (where) {
     case "left":
-      return "left-box";
+      return "about";
     case "right":
-      return "right-box";
+      return "topics";
     default:
       throw new Error("ctx not working as expected");
   }

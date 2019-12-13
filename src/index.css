@@ -55,11 +55,11 @@ code {
   }
 }
 
-.left-box, .right-box {
+.about, .topics {
   padding: 10px;
 }
 
-.right-box {
+.topics {
   display: flex;
   flex-direction: column;
 }

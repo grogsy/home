@@ -4,7 +4,7 @@ import data from "../../data";
 
 const RightBox = props => {
   return (
-    <div className="right-box">
+    <div className="topics">
       {data.lists.map(item => (
         <TopicContainer
           className="topic-container"
