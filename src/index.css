@@ -43,7 +43,7 @@ code {
   align-items: center;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   /*Desktops*/
   .main {
     padding-right: 40px;
@@ -58,7 +58,6 @@ code {
 .about, .topics {
   padding: 10px;
 }
-
 
 .react-link {
   text-decoration: none;
@@ -104,17 +103,6 @@ code {
   100% {
     left: 40px;
   }
-}
-
-#me-container {
-  width: 100%;
-}
-
-.me {
-  width: 450px;
-  height: 240px;
-  border-radius: 20px;
-  border: 1px solid black;
 }
 
 /*
