@@ -104,6 +104,7 @@ code {
 @media only screen and (min-width: 768px) {
   .navbar {
     justify-content: center;
+    padding-bottom: 8px;
   }
 }
 
