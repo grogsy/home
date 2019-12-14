@@ -7,7 +7,12 @@ const ProjectDescription = ({ description, deployLink, githubLink }) => {
     <React.Fragment>
       <p className="card-text text-info">{description}</p>
       {deployLink ? (
-        <a target="_blank" href={deployLink} className="btn btn-info">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href={deployLink}
+          className="btn btn-info"
+        >
           View In Heroku
         </a>
       ) : (
@@ -15,7 +20,7 @@ const ProjectDescription = ({ description, deployLink, githubLink }) => {
           This project isn't deployed :(
         </a>
       )}
-      <a target="_blank" href={githubLink}>
+      <a target="_blank" rel="noopener noreferrer" href={githubLink}>
         <FontAwesomeIcon
           className="card-icon react-link"
           icon={faGithub}

@@ -8,7 +8,12 @@ const LinkParser = ({ link, children, extraClasses }) => {
   }
 
   return link && link.startsWith("http") ? (
-    <a target="_blank" href={link} className={className}>
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      href={link}
+      className={className}
+    >
       {children}
     </a>
   ) : (

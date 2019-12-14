@@ -5,10 +5,10 @@
   height: auto;
 }
 
-  .header-text-container {
-    position: relative;
-    bottom:3px;
-  }
+.header-text-container {
+  position: relative;
+  bottom:3px;
+}
 
 .header-items:hover, .header-item:active {
     background-color: #226699;
