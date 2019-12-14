@@ -10,7 +10,7 @@ const Header = ({ className }) => {
     <nav className="navbar fixed-top navbar-dark bg-dark">
       <HeaderItem headerName="Home" icon={faHome} />
       <HeaderItem headerName="Projects" icon={faTasks} link="projects" />
-      <HeaderItem headerName="Resume" icon={faCopy} link="resume" />
+      <HeaderItem headerName="Resume" icon={faCopy} link="resume.pdf" />
       <HeaderItem
         headerName="GitHub"
         icon={faGithub}
@@ -19,7 +19,6 @@ const Header = ({ className }) => {
       <HeaderItem
         headerName="Linkedin"
         icon={faLinkedin}
-        link="linkedin"
         link="https://linkedin.com/brian2772"
       />
     </nav>

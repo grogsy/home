@@ -7,7 +7,7 @@ const LinkParser = ({ link, children, extraClasses }) => {
     className = className + " " + extraClasses;
   }
 
-  return link && link.startsWith("http") ? (
+  return link && (link.startsWith("http") || link.endsWith(".pdf")) ? (
     <a
       target="_blank"
       rel="noopener noreferrer"
