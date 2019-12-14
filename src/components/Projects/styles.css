@@ -1,11 +1,15 @@
+.project-main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .project-header {
   background-color: #3e4358;
-  display:flex;
+  display: flex;
   flex-direction: row;
   cursor: pointer;
-  max-width: 30rem;
-  margin: 5px;
-  transition: 0.4s all ease-in-out;
+  width: 100%;
 }
 
 .project-header:hover {
@@ -23,19 +27,8 @@
   color: #bbdddd;
 }
 
-.project-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  position: relative;
-  bottom: 20px;
-}
-
 .project-container {
   max-height: 500px;
-  width: 35rem;
   transition: 0.3s ease-in-out;
 }
 
@@ -43,3 +36,29 @@
   max-height: 55px;
   overflow: hidden;
 }
+
+@media only screen and (min-width: 768px) {
+  .project-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  .project-header {
+    max-width: 30rem;
+    margin: 5px;
+    transition: 0.4s all ease-in-out;
+  }
+
+  .card {
+    width: 30.5rem;
+  }
+
+  .project-container {
+    width: 30rem;
+    transition: 0.3s ease-in-out;
+  }
+}
+
