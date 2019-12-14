@@ -24,12 +24,6 @@
   margin: 5px;
 }
 
-.project-container {
-  max-height: 500px;
-  width: 35rem;
-  transition: 0.3s ease-in-out;
-}
-
 .topic-container-icon {
   margin-right: 10px;
   margin-left: 5px;
