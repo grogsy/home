@@ -9,7 +9,7 @@ const Modal = ({ handleClose, show, imgSrc }) => {
   return (
     <div className={showHideClassName} onClick={handleClose}>
       <section className="modal-image-main">
-        <img className="zoom-out" src={imgSrc} />
+        <img className="zoom-out" alt="Project" src={imgSrc} />
       </section>
     </div>
   );
