@@ -5,6 +5,10 @@
   height: auto;
 }
 
+.header-icon {
+  color: #bbdddd;
+}
+
 .header-text-container {
   position: relative;
   bottom:3px;
