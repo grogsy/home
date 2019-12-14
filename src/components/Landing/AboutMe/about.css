@@ -26,5 +26,6 @@
   
   .about {
     text-align: left;
+    justify-content: initial;
   }
 }
