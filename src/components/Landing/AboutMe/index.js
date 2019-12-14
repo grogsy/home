@@ -7,10 +7,12 @@ let me =
 const AboutMe = props => {
   return (
     <React.Fragment>
-      <p>Hi I'm Brian!</p>
-      <p>Welcome to my Website.</p>
-      <p>I'm using this as a playground to try out front-end things.</p>
-      <p>Me messing with python: </p>
+      <div className="about-text">
+        <p>Hi I'm Brian!</p>
+        <p>Welcome to my Website.</p>
+        <p>I'm using this as a playground to try out front-end things.</p>
+        <p>Me messing with python: </p>
+      </div>
       <div id="me-container">
         <img className="me" src={me} alt="me" />
       </div>
