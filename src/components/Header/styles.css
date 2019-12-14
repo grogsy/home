@@ -1,31 +1,48 @@
 .header-item {
-  height: 40px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  transition: 0.2s all ease-in-out;
-  margin-left: 5px;
-  margin-right: 5px;
-  border-radius: 3px;
-  padding:10px;
+  height: auto;
 }
 
-.header-item:hover {
-  background-color: #226699;
-  transition: 0.2s all ease-in-out;
-  transform: scale(1.1);
-  /* https://css-tricks.com/almanac/properties/b/box-shadow/ */
-  box-shadow: 0 10px 6px -6px #101111;
+  .header-text-container {
+    position: relative;
+    bottom:3px;
+  }
+
+.header-items:hover, .header-item:active {
+    background-color: #226699;
+    border-radius: 3px;
+}
+
+@media only screen and (min-width: 768px) {
+ .header-item {
+    height: 40px;
+    justify-content: center;
+    transition: 0.2s all ease-in-out;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 3px;
+    padding: 10px;
+  }
+
+ .header-item:hover {
+    background-color: #226699;
+    transition: 0.2s all ease-in-out;
+    transform: scale(1.1);
+    /* https://css-tricks.com/almanac/properties/b/box-shadow/ */
+    box-shadow: 0 10px 6px -6px #101111;
+  }
+
+  .header-icon {
+    position: relative;
+    top: 4px;
+  }
+  
+  .header-text-container {
+    position: relative;
+    bottom:3px;
+  }
 }
 
 
-.header-icon {
-  position: relative;
-  top: 4px;
-}
-
-.header-text-container {
-  position: relative;
-  bottom:3px;
-}
