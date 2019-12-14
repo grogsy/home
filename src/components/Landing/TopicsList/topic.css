@@ -20,7 +20,7 @@
 .topic-container {
   max-height: 300px;
   width: 300px;
-  transition: 0.3s ease-in-out;
+  transition: 0.3s all ease-in-out;
   margin: 5px;
 }
 
@@ -32,7 +32,11 @@
 
 .topic-list-item {
   background-color: #add8e6;
-  /* width: 200px; */
+  width: 18rem;
+}
+
+.topic-list {
+  padding-top: 10px;
 }
 
 .closed {
