@@ -1,7 +1,7 @@
 import React from "react";
 
 const getCorrectClassName = closed => {
-  return closed ? "topic-list card" : "topic-list card fade-in";
+  return closed ? "topic-list" : "topic-list fade-in";
 };
 
 const TopicList = ({ list, isClosed }) => {
