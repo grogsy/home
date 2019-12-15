@@ -17,4 +17,5 @@
 
 .carousel-img {
   display: flex;
+  overflow: hidden;
 }
