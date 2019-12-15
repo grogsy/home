@@ -8,8 +8,8 @@ const AboutMe = props => {
   return (
     <React.Fragment>
       <div className="about-text">
-        <p>Hi I'm Brian!</p>
-        <p>Welcome to my Website.</p>
+        <p>Hi, I'm Brian!</p>
+        <p>Welcome to my website.</p>
         <p>I'm using this as a playground to try out front-end things.</p>
         <p>Me messing with python: </p>
       </div>
