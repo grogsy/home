@@ -7,11 +7,7 @@ const RightBox = props => {
   return (
     <React.Fragment>
       {data.lists.map(item => (
-        <TopicContainer
-          className="topic-container"
-          headerText={item.name}
-          listItems={item.content}
-        />
+        <TopicContainer headerText={item.name} listItems={item.content} />
       ))}
     </React.Fragment>
   );
