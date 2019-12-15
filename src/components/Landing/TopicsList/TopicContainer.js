@@ -1,44 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 
 import TopicHeader from "./TopicHeader";
 import TopicList from "./TopicList";
 
-/**
- * TODO: Change to state hook
- */
-
-class TopicContainer extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      closed: true
-    };
-
-    this.toggleClosed = this.toggleClosed.bind(this);
-  }
-
-  toggleClosed() {
-    this.setState({ closed: !this.state.closed });
-  }
-
-  isClosed = () => {
-    return this.state.closed
-      ? `${this.props.className} closed`
-      : this.props.className;
+const TopicContainer = ({ headerText, listItems }) => {
+  const initialState = {
+    closed: true
   };
 
-  render() {
-    return (
-      <div className={this.isClosed()}>
-        <TopicHeader
-          isClosed={this.state.closed}
-          headerText={this.props.headerText}
-          toggleClosed={this.toggleClosed}
-        />
-        <TopicList isClosed={this.state.closed} list={this.props.listItems} />
-      </div>
-    );
-  }
-}
+  const [state, setState] = useState(initialState);
+
+  return (
+    <div
+      className={state.closed ? "topic-container closed" : "topic-container"}
+    >
+      <TopicHeader
+        isClosed={state.closed}
+        headerText={headerText}
+        toggleClosed={() => {
+          setState({ closed: !state.closed });
+        }}
+      />
+      <TopicList isClosed={state.closed} list={listItems} />
+    </div>
+  );
+};
 
 export default TopicContainer;
