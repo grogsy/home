@@ -12,29 +12,36 @@ const ProjectContainer = ({
   deployLink,
   githubLink
 }) => {
-  const [isClosed, toggleOpenClose] = useState(true);
-  const [showModal, toggleModal] = useState(false);
+  const initialState = {
+    closed: true,
+    showModal: false
+  };
+  const [state, setState] = useState(initialState);
+  // const [isClosed, toggleOpenClose] = useState(true);
+  // const [showModal, toggleModal] = useState(false);
 
   return (
     <div
-      className={isClosed ? "project-container closed" : "project-container"}
+      className={
+        state.closed ? "project-container closed" : "project-container"
+      }
     >
       <CardHeader
-        isClosed={isClosed}
+        isClosed={state.closed}
         headerText={headerText}
         toggleOpenClosed={() => {
-          toggleOpenClose(!isClosed);
+          setState({ closed: !state.closed });
         }}
       />
-      <Card isClosed={isClosed}>
+      <Card isClosed={state.closed}>
         <Carousel
           images={images}
-          show={showModal}
+          show={state.showModal}
           hideModal={() => {
-            toggleModal(false);
+            setState({ showModal: false });
           }}
           showModal={() => {
-            toggleModal(true);
+            setState({ showModal: true });
           }}
         />
         <CardBody>
