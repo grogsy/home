@@ -1,21 +1,17 @@
 import React, { useState } from "react";
+
 import CardHeader from "./Header";
 import Card from "./Card";
 import CardBody from "./CardBody";
 import ProjectDescription from "./ProjectDescription";
 import { Carousel } from "../../Layout";
 
-const ProjectContainer = ({
-  headerText,
-  description,
-  images,
-  deployLink,
-  githubLink
-}) => {
+const ProjectContainer = ({ project }) => {
   const initialState = {
     closed: true,
     showModal: false
   };
+
   const [state, setState] = useState(initialState);
   // const [isClosed, toggleOpenClose] = useState(true);
   // const [showModal, toggleModal] = useState(false);
@@ -28,14 +24,14 @@ const ProjectContainer = ({
     >
       <CardHeader
         isClosed={state.closed}
-        headerText={headerText}
+        headerText={project.name}
         toggleOpenClosed={() => {
           setState({ closed: !state.closed });
         }}
       />
       <Card isClosed={state.closed}>
         <Carousel
-          images={images}
+          images={project.images}
           show={state.showModal}
           hideModal={() => {
             setState({ showModal: false });
@@ -46,9 +42,9 @@ const ProjectContainer = ({
         />
         <CardBody>
           <ProjectDescription
-            description={description}
-            deployLink={deployLink}
-            githubLink={githubLink}
+            description={project.description}
+            deployLink={project.deployLink}
+            githubLink={project.githubLink}
           />
         </CardBody>
       </Card>
