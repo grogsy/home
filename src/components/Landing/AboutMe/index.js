@@ -10,7 +10,14 @@ const AboutMe = props => {
       <div className="about-text">
         <p>Hi, I'm Brian!</p>
         <p>Welcome to my website.</p>
-        <p>I'm using this as a playground to try out front-end things.</p>
+        <p>
+          I'm using this as a playground to try out front-end things. I really
+          enjoy learning new technologies, and building cool stuff with them.
+        </p>
+        <p>
+          Also, I'm interested in a Software Developer role in the Jersey
+          City/NYC area that utilizes my Javascript/Python skills.
+        </p>
         <p>Me messing with python: </p>
       </div>
       <div id="me-container">

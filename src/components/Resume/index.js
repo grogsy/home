@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { Link } from "../Layout";
 const Resume = props => {
+  useEffect(() => {
+    document.title = "Brian's Resume";
+  });
+
   return (
     <div
       className="main"
