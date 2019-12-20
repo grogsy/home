@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-import { Link } from "../Layout";
+import Link from "../Layout/LinkParser";
 const Resume = props => {
   useEffect(() => {
     document.title = "Brian's Resume";
