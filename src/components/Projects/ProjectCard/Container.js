@@ -4,7 +4,7 @@ import CardHeader from "./Header";
 import Card from "./Card";
 import CardBody from "./CardBody";
 import ProjectDescription from "./ProjectDescription";
-import { Carousel } from "../../Layout";
+import Carousel from "../../Layout/Carousel";
 
 const ProjectContainer = ({ project }) => {
   const initialState = {

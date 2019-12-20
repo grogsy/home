@@ -5,7 +5,7 @@ import {
   faChevronRight
 } from "@fortawesome/free-solid-svg-icons";
 
-import { ImageModal } from "./index";
+import ImageModal from "./ImageModal";
 import "./styles/carousel.css";
 
 const Carousel = ({ images, show, hideModal, showModal }) => {

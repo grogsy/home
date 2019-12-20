@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 import TopicList from "./TopicsList";
 import AboutMe from "./AboutMe";
-import { ContainerSmall } from "../Layout";
+import ContainerSmall from "../Layout/ContainerSmaller";
 import "./main.css";
 
 const Landing = () => {
