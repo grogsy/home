@@ -40,6 +40,7 @@ const ProjectContainer = ({ project }) => {
             setState({ showModal: true });
           }}
         />
+        <hr style={{ margin: 0, backgroundColor: "black" }} />
         <CardBody>
           <ProjectDescription
             description={project.description}
