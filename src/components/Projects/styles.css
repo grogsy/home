@@ -27,12 +27,12 @@
 }
 
 .project-container {
-  max-height: 500px;
+  max-height: 600px;
   transition: 0.3s ease-in-out;
 }
 
 .closed {
-  max-height: 55px;
+  max-height: 59px;
   overflow: hidden;
 }
 
@@ -47,17 +47,16 @@
 
   .project-header {
     max-width: 30rem;
-    margin: 5px;
     transition: 0.4s all ease-in-out;
-  }
-
-  .card {
-    width: 30.5rem;
   }
 
   .project-container {
     width: 30rem;
+    margin-bottom: 10px;
     transition: 0.3s ease-in-out;
   }
 }
 
+.card {
+    border: 1px solid #342b40;
+}
