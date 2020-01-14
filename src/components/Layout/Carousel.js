@@ -12,7 +12,7 @@ const Carousel = ({ images, show, hideModal, showModal }) => {
   const [active, setActive] = useState(0);
 
   return (
-    <div className="carousel">
+    <div className="carousel py-1">
       <ImageModal show={show} handleClose={hideModal} imgSrc={images[active]} />
       <FontAwesomeIcon
         className="carousel-btn"
