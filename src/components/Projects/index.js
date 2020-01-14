@@ -9,6 +9,7 @@ const Projects = props => {
   });
   return (
     <div className="project-main">
+      <h1>Here are a few projects I've worked on:</h1>
       {data.projects.map(project => (
         <ProjectContainer project={project} />
       ))}
