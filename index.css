@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 body p, li, button, .btn, a{
     font-family: 'Quicksand', sans-serif;
 }
