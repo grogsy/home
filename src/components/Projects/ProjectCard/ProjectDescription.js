@@ -13,7 +13,7 @@ const ProjectDescription = ({ description, deployLink, githubLink }) => {
           href={deployLink}
           className="btn btn-info"
         >
-          View In Heroku
+          Check It Out
         </a>
       ) : (
         <a className="btn btn-secondary disabled">
@@ -25,6 +25,7 @@ const ProjectDescription = ({ description, deployLink, githubLink }) => {
           className="card-icon react-link"
           icon={faGithub}
           size="3x"
+          title="View Code on Github"
         />
       </a>
     </React.Fragment>
